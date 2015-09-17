@@ -1,15 +1,38 @@
 #!env/bin/python
-
+from datetime import datetime, date
 import requests, os
-from bs4 import BeautifulSoup as bs4
 
-url = 'https://www.aphis.usda.gov/wps/portal/aphis/resources/lawsandregs/sa_foia/ct_foia_logsprint'
+BASE_URL = 'https://www.aphis.usda.gov/foia/foia_logs'
 
-if not os.path.exists('logs'):
-    os.makedirs('logs')
+def make_url(year, month):
+    """ Return URL of file for year and month """
+    return "%s/%s/%s.xlsx" % (BASE_URL, str(year), month)   
 
-result = requests.get(url, verify=False)
-soup = bs4(result.text,'html.parser')
+START_YEAR = 2010
+START_MONTH = 'October'
 
+# We need the current year to set the range
+current_year = datetime.now().year
 
-print soup.prettify().encode('utf-8')
+# We need the current month to set the final download
+current_month = datetime.now().strftime("%B")
+
+years = [n for n in range(START_YEAR,current_year+1)]
+months = [date(2000,s,1).strftime("%B") for s in range(1,13)]
+
+# Loop through years and months
+url_list = []
+
+for year in years:
+    start_num = 0
+    end_num = 12
+    if year == START_YEAR:
+        # Start with start month
+        start_num = months.index(START_MONTH)
+    if year == current_year:
+        # End with last month
+        end_num = months.index(current_month)
+    for month in months[start_num:end_num]:
+        url_list.append(make_url(year, month))
+
+print url_list
