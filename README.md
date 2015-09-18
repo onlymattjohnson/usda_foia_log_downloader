@@ -7,23 +7,23 @@ The FOIA logs are located on [USDA web server](http://www.aphis.usda.gov/foia/).
 ```https://www.aphis.usda.gov/foia/foia_logs/<YEAR>/<MONTH NAME>.xlsx```
 
 ## Usage
-1. Create a virtual environment for your script:
+Create a virtual environment for your script:
 
 ```$ virtualenv env ```
 
-2. Enter the virtual environment
+Enter the virtual environment
 
 ```$ source env/bin/activate ```
 
-3. Install requirements
+Install requirements
 
 ```$ pip install -r requirements.txt ```
 
-4. Change permissions on script
+Change permissions on script
 
 ```$ chmod a+x get_foia_files.py```
 
-5. Execute script and enjoy the files
+Execute script and enjoy the files
 
 ```$ ./get_foia_files.py```
 
