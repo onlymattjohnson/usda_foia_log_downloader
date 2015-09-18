@@ -1,0 +1,8 @@
+#!/bin/bash
+for f in $(find logs/ -type f -name "*.xls*")
+do
+    echo "Processing $f"
+    filename=$(basename "$f")
+    filename="${filename%.*}"
+    in2csv $f > $(dirname $f)/$filename.csv
+done
