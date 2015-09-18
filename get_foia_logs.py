@@ -6,6 +6,28 @@ BASE_URL = 'https://www.aphis.usda.gov/foia/foia_logs'
 START_YEAR = 2010
 START_MONTH = 'October'
 
+def download_file(url):
+    # get file year
+    year = url[len(BASE_URL)+1:len(BASE_URL)+5]
+
+    dirname = 'logs/%s' % year
+    file_name = url[len(BASE_URL)+6:]
+
+    # make year directory
+    if not os.path.exists(dirname):
+        os.makedirs(dirname)
+
+    res = requests.get(url)
+    res.raise_for_status()
+    foia_file = open('%s%s' % (dirname, file_name))
+    for chunk in res.iter_content(100000):
+        foia_file.write(chunk)
+
+    foia_file.close()
+
+    return None
+
+
 def get_urls():
     """ Return a list of all the urls we need """
     # We need the current year to set the range
@@ -38,4 +60,15 @@ def make_url(year, month):
     """ Return URL of file for year and month """
     return "%s/%s/%s.xlsx" % (BASE_URL, str(year), month)   
 
-print get_urls()
+def setup_directories():
+    if not os.path.exists('logs'):
+        os.makedirs('logs')
+
+# setup direcotories
+setup_directories()
+
+# get file urls
+file_urls = get_urls()
+
+download_file(file_urls[0])
+
