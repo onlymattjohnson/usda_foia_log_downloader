@@ -7,6 +7,18 @@ START_YEAR = 2010
 START_MONTH = 'October'
 
 def download_file(url):
+    print 'Attempting download of %s...' % url
+    try:
+        res = requests.get(url)
+        res.raise_for_status()
+    except:
+        # if file not found
+        if res.status_code == 404:
+            print 'File not found. trying .xls instead'
+            url = url[:-1]
+            res = requests.get(url)
+            res.raise_for_status
+
     # get file year
     year = url[len(BASE_URL)+1:len(BASE_URL)+5]
 
@@ -15,15 +27,18 @@ def download_file(url):
 
     # make year directory
     if not os.path.exists(dirname):
+        'Creating directory %s' % year
         os.makedirs(dirname)
 
-    res = requests.get(url)
-    res.raise_for_status()
+    print 'Saving file %s... ' % file_name
+       
     foia_file = open('%s/%s' % (dirname, file_name),'w')
     for chunk in res.iter_content(100000):
         foia_file.write(chunk)
 
     foia_file.close()
+
+    print 'File saved.'
 
     return None
 
@@ -70,5 +85,6 @@ setup_directories()
 # get file urls
 file_urls = get_urls()
 
-download_file(file_urls[0])
+for url in file_urls:
+    download_file(url)
 
