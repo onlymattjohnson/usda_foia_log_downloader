@@ -19,7 +19,7 @@ def download_file(url):
 
     res = requests.get(url)
     res.raise_for_status()
-    foia_file = open('%s%s' % (dirname, file_name))
+    foia_file = open('%s/%s' % (dirname, file_name),'w')
     for chunk in res.iter_content(100000):
         foia_file.write(chunk)
 
