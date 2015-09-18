@@ -27,3 +27,6 @@ Execute script and enjoy the files
 
 ```$ ./get_foia_files.py```
 
+Convert all excel files to CSV
+
+```$ ./convert_to_csv.sh ```
