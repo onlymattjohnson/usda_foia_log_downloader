@@ -8,8 +8,15 @@ def check_file(file_name):
         for row in reader:
             csv_list.append(row)
 
-    print csv_list[0][0]
+    first_cell = csv_list[0][0]
+    needles = ['Request ID', 'CASE NO.']
+    
+    print first_cell
+    if first_cell in needles:
+        return True
+    return False
     
 
 file_name = sys.argv[1]
-check_file(file_name);
+
+print check_file(file_name);
