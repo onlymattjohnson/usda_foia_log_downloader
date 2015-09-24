@@ -33,4 +33,8 @@ csv_list = load_csv(file_name)
 if not check_file(csv_list, needles):
     # First row is bad, find the starting row
     good_row = find_good_row(csv_list)
-    print csv_list[good_row]
+    print 'Found good row, attempting re-write'
+    f = csv.writer(open(file_name, 'wb'))
+    for line in csv_list[good_row:]:
+        f.writerow(line)
+        
