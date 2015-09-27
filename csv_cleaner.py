@@ -9,10 +9,10 @@ def check_file(csv_list, needles):
 
     return False
     
-def find_good_row(csv_list):
+def find_good_row(csv_list, col_num):
     counter = 0
     for row in csv_list:
-        if row[0] in needles:
+        if row[col_num] in needles:
             return counter
         counter = counter + 1
     return False
@@ -32,12 +32,16 @@ csv_list = load_csv(file_name)
 
 if not check_file(csv_list, needles):
     # First row is bad, find the starting row
-    good_row = find_good_row(csv_list)
+    for i in range(0,len(csv_list[0])):
+        good_row = find_good_row(csv_list, i)
+        if good_row:
+            break
+
     if good_row:
-        print 'Found good row, attempting re-write'
+        print 'Found good row at col %s row %s, attempting re-write' % (str(i), str(good_row))
         f = csv.writer(open(file_name, 'wb'))
         for line in csv_list[good_row:]:
-            f.writerow(line)
+            f.writerow(line[i:])
     else:
         print 'Could not find good row in file.'
 
