@@ -1,0 +1,110 @@
+Processing logs/2010/October.xlsx
+Processing logs/2010/December.xlsx
+Processing logs/2010/November.xlsx
+Processing logs/2013/July.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/January.xls
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/May.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/February.xls
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/October.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/December.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/June.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/April.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/September.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/November.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/August.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2013/March.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2015/July.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2015/February.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2015/May.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2015/June.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2015/April.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2015/January.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2015/August.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2015/March.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2012/July.xlsx
+Found good row at col 1 row 4, attempting re-write
+Processing logs/2012/February.xlsx
+Found good row at col 1 row 10, attempting re-write
+Processing logs/2012/January.xls
+Processing logs/2012/May.xls
+Found good row at col 1 row 10, attempting re-write
+Processing logs/2012/October.xlsx
+Found good row at col 1 row 3, attempting re-write
+Processing logs/2012/December.xlsx
+Found good row at col 1 row 4, attempting re-write
+Processing logs/2012/June.xlsx
+Found good row at col 1 row 4, attempting re-write
+Processing logs/2012/April.xlsx
+Found good row at col 1 row 10, attempting re-write
+Processing logs/2012/September.xlsx
+Found good row at col 1 row 4, attempting re-write
+Processing logs/2012/November.xlsx
+Found good row at col 1 row 3, attempting re-write
+Processing logs/2012/August.xlsx
+Found good row at col 1 row 3, attempting re-write
+Processing logs/2012/March.xlsx
+Found good row at col 1 row 10, attempting re-write
+Processing logs/2011/July.xlsx
+Could not find good row in file.
+Processing logs/2011/February.xlsx
+Could not find good row in file.
+Processing logs/2011/November.xls
+Processing logs/2011/May.xlsx
+Could not find good row in file.
+Processing logs/2011/December.xls
+Processing logs/2011/October.xls
+Processing logs/2011/June.xlsx
+Could not find good row in file.
+Processing logs/2011/April.xlsx
+Could not find good row in file.
+Processing logs/2011/September.xlsx
+Could not find good row in file.
+Processing logs/2011/January.xlsx
+Processing logs/2011/August.xlsx
+Could not find good row in file.
+Processing logs/2011/March.xlsx
+Could not find good row in file.
+Processing logs/2014/July.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/February.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/May.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/October.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/December.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/June.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/April.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/September.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/November.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/January.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/August.xlsx
+Found good row at col 0 row 2, attempting re-write
+Processing logs/2014/March.xlsx
+Found good row at col 0 row 2, attempting re-write
