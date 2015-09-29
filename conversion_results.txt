@@ -72,9 +72,6 @@ Processing logs/2011/December.xls
 Processing logs/2011/October.xls
 Processing logs/2011/June.xlsx
 Processing logs/2011/April.xlsx
-*** Could not find good row in file.
-
-
 Processing logs/2011/September.xlsx
 Processing logs/2011/January.xlsx
 Processing logs/2011/August.xlsx

@@ -3,8 +3,8 @@ import csv, sys
 # Check if csv file is formatted right
 def check_file(csv_list, needles):
     first_cell = csv_list[0][0]
-    
-    if first_cell in needles:
+        
+    if ' '.join(first_cell.split()) in needles:
         return True
 
     return False
