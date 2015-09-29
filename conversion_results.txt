@@ -65,25 +65,23 @@ Found good row at col 1 row 3, attempting re-write
 Processing logs/2012/March.xlsx
 Found good row at col 1 row 10, attempting re-write
 Processing logs/2011/July.xlsx
-Could not find good row in file.
 Processing logs/2011/February.xlsx
-Could not find good row in file.
 Processing logs/2011/November.xls
 Processing logs/2011/May.xlsx
-Could not find good row in file.
 Processing logs/2011/December.xls
 Processing logs/2011/October.xls
 Processing logs/2011/June.xlsx
-Could not find good row in file.
 Processing logs/2011/April.xlsx
-Could not find good row in file.
+*** Could not find good row in file.
+
+
 Processing logs/2011/September.xlsx
-Could not find good row in file.
 Processing logs/2011/January.xlsx
 Processing logs/2011/August.xlsx
-Could not find good row in file.
 Processing logs/2011/March.xlsx
-Could not find good row in file.
+*** Could not find good row in file.
+
+
 Processing logs/2014/July.xlsx
 Found good row at col 0 row 2, attempting re-write
 Processing logs/2014/February.xlsx
