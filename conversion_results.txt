@@ -76,9 +76,6 @@ Processing logs/2011/September.xlsx
 Processing logs/2011/January.xlsx
 Processing logs/2011/August.xlsx
 Processing logs/2011/March.xlsx
-*** Could not find good row in file.
-
-
 Processing logs/2014/July.xlsx
 Found good row at col 0 row 2, attempting re-write
 Processing logs/2014/February.xlsx
