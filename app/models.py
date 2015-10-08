@@ -6,7 +6,7 @@ class Request(db.Model):
     date_received = db.Column(db.DateTime)
     date_due = db.Column(db.DateTime, index=True)
     date_closed = db.Column(db.DateTime, index=True)
-    track = db.Column(db.String(32)
+    track = db.Column(db.String(32))
     subject = db.Column(db.String(500))
 
     def __repr__(self):
