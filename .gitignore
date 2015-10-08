@@ -55,3 +55,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# extraneous db files
+db_repository/*
