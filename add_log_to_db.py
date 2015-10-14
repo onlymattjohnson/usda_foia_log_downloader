@@ -3,10 +3,10 @@ import csv, sys
 
 def get_file_contents(file_name):
     result = []
-    with open(file_name, 'rb') as csvfile:
-        filereader = csv.reader(csvfile)
-        for row in filereader:
-            result.append(row)
+    reader = csv.DictReader(open(file_name))
+
+    for row in reader:
+        result.append(row)
 
     return result
     
