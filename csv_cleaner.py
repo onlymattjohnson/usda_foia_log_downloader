@@ -1,4 +1,4 @@
-import csv, sys
+import csv, re, sys
 
 # Check if csv file is formatted right
 def check_file(csv_list, needles):
@@ -8,7 +8,7 @@ def check_file(csv_list, needles):
         return True
 
     return False
-    
+
 def find_good_row(csv_list, col_num):
     counter = 0
     for row in csv_list:
@@ -29,6 +29,7 @@ def load_csv(file_name):
 file_name = sys.argv[1]
 needles = ['Request ID', 'CASE NO.', 'CASENO', 'CASE NO']
 csv_list = load_csv(file_name)
+
 
 if not check_file(csv_list, needles):
     # First row is bad, find the starting row

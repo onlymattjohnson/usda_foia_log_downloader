@@ -1,5 +1,6 @@
 #!env/bin/python
 import csv, sys
+from app import db, models
 
 def get_file_contents(file_name):
     result = []
@@ -10,6 +11,18 @@ def get_file_contents(file_name):
 
     return result
     
+def dict_to_db(data):
+    # test
+    my_dict = data[0]
+
+    case_no = my_dict['CASE NO.']
+    date_received = my_dict['DATE RECEIVED']
+    date_due = my_dict['DATE DUE OUT']
+    date_closed = my_dict['CLOSURE DATE']
+    track = my_dict['TRACK']
+    subject = my_dict['SUBJECT']
+
+    print case_no, date_received, date_due, date_closed, track, subject
 
 try:
     file_name = sys.argv[1]
@@ -17,4 +30,6 @@ except:
     print "You must give an argument for the name of the file"
     sys.exit(1)
 
-print get_file_contents(file_name)
+mydict = get_file_contents(file_name)
+
+dict_to_db(mydict)
