@@ -4,7 +4,7 @@ from app import db, models
 
 def get_file_contents(file_name):
     result = []
-    reader = csv.DictReader(open(file_name))
+    reader = csv.DictReader(open(file_name),fieldnames=['CASE NO.','LAST NAME', 'FIRST NAME', 'AFFILIATION', 'DATE RECEIVED', 'DATE DUE OUT', 'TRACK', 'SUBJECT', 'CLOSURE DATE'])
 
     for row in reader:
         result.append(row)
@@ -13,7 +13,7 @@ def get_file_contents(file_name):
     
 def dict_to_db(data):
     # test
-    my_dict = data[0]
+    my_dict = data[1]
 
     case_no = my_dict['CASE NO.']
     date_received = my_dict['DATE RECEIVED']

@@ -30,7 +30,6 @@ file_name = sys.argv[1]
 needles = ['Request ID', 'CASE NO.', 'CASENO', 'CASE NO']
 csv_list = load_csv(file_name)
 
-
 if not check_file(csv_list, needles):
     # First row is bad, find the starting row
     for i in range(0,len(csv_list[0])):
@@ -45,6 +44,5 @@ if not check_file(csv_list, needles):
             f.writerow(line[i:])
     else:
         print '*** Could not find good row in file.\n\n'
-
 
         
